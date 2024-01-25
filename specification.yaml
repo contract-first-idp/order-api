@@ -1,0 +1,10 @@
+openapi: 3.0.3
+info:
+  title: order-api
+  description: |-
+    the API for orders
+  version: 0.0.1
+servers:
+  - url: "http://localhost:8080"
+  - url: "https://microcks-microcks.apps.cluster-65qcl.dynamic.redhatworkshops.io/rest/order-api/0.0.1"
+paths: {}

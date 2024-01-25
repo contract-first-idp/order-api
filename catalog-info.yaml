@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: "order-api"
+  title: "order-api"
+  description: "the API for orders"
+  annotations:
+    backstage.io/spectral-ruleset-url: https://raw.githubusercontent.com/contract-first-idp/spectral-rules/main/ruleset.yaml
+spec:
+  type: openapi
+  system: system:default/sap
+  owner: "group:default/backstage-admins"
+  lifecycle: experimental
+  definition:
+    $openapi: https://github.com/contract-first-idp/order-api/blob/master/specification.yaml
